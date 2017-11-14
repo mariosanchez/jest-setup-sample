@@ -1,0 +1,16 @@
+  {
+  // ...
+  "jest": {
+    "testEnvironment": "jest-environment-node", // this is for avoid jest to use DOM, for node projects it's faster
+    "collectCoverageFrom": ["*.js"], // This configure which files will be included in coverage, not just the ones with tests
+    "coverageThreshold": {
+      // With this configuration we can define our threshold for code coverage on this code blocks
+      "global": {
+        "statements": 50,
+        "branches": 50,
+        "functions": 50,
+        "lines": 100
+      }
+    }
+  }
+}
